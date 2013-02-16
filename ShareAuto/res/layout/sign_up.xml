@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dip" >
+
+    <TableLayout
+        android:id="@+id/name_with_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <EditText
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight="0.7"
+                android:gravity="bottom"
+                android:hint="@string/name"
+                android:inputType="text" />
+
+            <QuickContactBadge
+                android:id="@+id/contact_badge"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:src="@drawable/default_image" />
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/location"
+        android:inputType="text"
+        android:entries="@array/location_texts" />
+
+</LinearLayout>
